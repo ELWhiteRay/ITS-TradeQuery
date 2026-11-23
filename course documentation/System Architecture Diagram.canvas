@@ -1,0 +1,15 @@
+{
+	"nodes":[
+		{"id":"2e0aed1f7b4b9d67","type":"text","text":"User Interface\nTask description, DB schema, SQL editor, results and hints ","x":-222,"y":100,"width":478,"height":60},
+		{"id":"4bb94a37595baf65","type":"text","text":"Tutoring Model\nChecks results, selects feedback and hints, suggests practice ","x":-234,"y":234,"width":502,"height":66},
+		{"id":"df13a3b77ce90b06","type":"text","text":"Domain Model\nSQL skills and concepts \nCompany DB\nExercises and prepared hints ","x":-300,"y":440,"width":250,"height":120},
+		{"id":"8364dbe37a697527","type":"text","text":"Student Model\nAttempts and results \nHints used \nProgress for each SQL skill","x":80,"y":440,"width":250,"height":120},
+		{"id":"4db04aed6affd54c","type":"text","text":"Learner","x":-108,"y":0,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"f6a709563546f4e6","fromNode":"4db04aed6affd54c","fromSide":"bottom","toNode":"2e0aed1f7b4b9d67","toSide":"top"},
+		{"id":"5c9cdafd60fe2ae6","fromNode":"2e0aed1f7b4b9d67","fromSide":"bottom","toNode":"4bb94a37595baf65","toSide":"top","label":"query / hint request"},
+		{"id":"5c4534fca9ad17b5","fromNode":"4bb94a37595baf65","fromSide":"bottom","toNode":"df13a3b77ce90b06","toSide":"top","label":"reads tasks and data\n"},
+		{"id":"869e3e35c25ed94a","fromNode":"4bb94a37595baf65","fromSide":"bottom","toNode":"8364dbe37a697527","toSide":"top","label":"reads / updates"}
+	]
+}
